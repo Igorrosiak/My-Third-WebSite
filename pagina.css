@@ -90,10 +90,15 @@ h2 {
   -webkit-text-stroke-color: black;
 }
 
-@media only screen and (max-width: 560px) 
+@media only screen and (max-width: 660px) 
 {
   img{ 
-    width: 1px;
-    height: 1px;
+    width: 400px;
+    height: 200px;
+
+  }
+
+  h1{
+    width: 200px;
   }
 }
