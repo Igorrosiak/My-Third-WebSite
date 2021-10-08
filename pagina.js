@@ -9,3 +9,7 @@ const irformação = function(){
 const irportfolio = function (){
     window.location.href = "portfólio.html"
 }
+
+const voltarinicial = function (){
+    window.location.href = "index.html"
+}

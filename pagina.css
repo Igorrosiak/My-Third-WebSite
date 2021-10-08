@@ -1,80 +1,99 @@
 body {
-    color: rgb(10, 32, 100);
-    text-align: center;
-    background-color: rgb(221, 221, 221);
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    }
-  
-  p {
-    font-size: 20px;
+  color: rgb(10, 32, 100);
+  text-align: center;
+  background-color: rgb(221, 221, 221);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
-  
-  .h1 {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    text-shadow :  0  2px  .5px  #747474,  
-    -1px     1px    .5px  #767676 ,  
-    -1.3px   1.3px  .5px  #787878 ,  
-    -1.5px     1.5px  .5px  #7a7a7a , 
-    -1.7px   1.7px    .5px  #7f7f7f , 
-    -2px     2px  .5px  #838383 , 
-    -2.5px   2.3px    .5px  #878787 , 
-    -2.7px     2.5px  .5px  #8a8a8a ,  
-    -3px   2.7px    .5px #8e8e8e , 
-    -3.3px     3px  .5px  #949494 , 
-    -3.5px   3.3px    .5px  #989898 , 
-    -3.7px     3.5px  .5px  #9f9f9f , 
-    -4.3px   3.7px    .5px  #a2a2a2 ,  
-    -4.5px     4px  .5px  #a7a7a7 , 
-    -4.7px   4.3px    .5px  #adadad , 
-    -5px     4.5px  .5px  #b3b3b3 , 
-    -5.3px   4.7px    1px  #b6b6b6 , 
-    -5.5px     5px    1px  #bcbcbc ,  
-    -5.7px   5.3px   1px  #c2c2c2 , 
-    -6px    5.5px   1px  #c8c8c8 , 
-    -6.3px  5.7px   1px  #cbcbcb , 
-    -6.5px    6px   1px  #d2d2d2 , 
-    -6.7px  6.3px   1px  #d5d5d5 ,  
-    -7px    6.5px   1px  #e2e2e2 , 
-    -7.3px  6.7px   1px  #e6e6e6 , 
-    -7.5px    7px .5px  #eaeaea, 
-    -7.7px  7.3px   .5px  #efefef ;
+
+p {
+  font-size: 20px;
+}
+
+.h1 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow :  0  2px  .5px  #747474,  
+  -1px     1px    .5px  #767676 ,  
+  -1.3px   1.3px  .5px  #787878 ,  
+  -1.5px     1.5px  .5px  #7a7a7a , 
+  -1.7px   1.7px    .5px  #7f7f7f , 
+  -2px     2px  .5px  #838383 , 
+  -2.5px   2.3px    .5px  #878787 , 
+  -2.7px     2.5px  .5px  #8a8a8a ,  
+  -3px   2.7px    .5px #8e8e8e , 
+  -3.3px     3px  .5px  #949494 , 
+  -3.5px   3.3px    .5px  #989898 , 
+  -3.7px     3.5px  .5px  #9f9f9f , 
+  -4.3px   3.7px    .5px  #a2a2a2 ,  
+  -4.5px     4px  .5px  #a7a7a7 , 
+  -4.7px   4.3px    .5px  #adadad , 
+  -5px     4.5px  .5px  #b3b3b3 , 
+  -5.3px   4.7px    1px  #b6b6b6 , 
+  -5.5px     5px    1px  #bcbcbc ,  
+  -5.7px   5.3px   1px  #c2c2c2 , 
+  -6px    5.5px   1px  #c8c8c8 , 
+  -6.3px  5.7px   1px  #cbcbcb , 
+  -6.5px    6px   1px  #d2d2d2 , 
+  -6.7px  6.3px   1px  #d5d5d5 ,  
+  -7px    6.5px   1px  #e2e2e2 , 
+  -7.3px  6.7px   1px  #e6e6e6 , 
+  -7.5px    7px .5px  #eaeaea, 
+  -7.7px  7.3px   .5px  #efefef ;
+}
+
+li{
+  display: inline;
+  padding: 0.5em;
+}
+
+ul > li > a.active {
+  color: black;
+  font-weight: bold;
+}
+
+ul > li > a {
+  color: black;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  color: rgb(221, 221, 221);
+  background-color: rgb(1, 17, 66);
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+
+.cabecalho {
+  padding: 0 4px 0 4px;
+  height: 6vh;
+}
+
+.cabecalho .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: rgb(4, 16, 51);
+  color: rgb(221, 221, 221);
+  padding: 5px;
+  margin: 15px;
+}
+
+h2 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+@media only screen and (max-width: 560px) 
+{
+  img{ 
+    width: 1px;
+    height: 1px;
   }
-  
-  li{
-    display: inline;
-    padding: 0.5em;
-  }
-  
-  ul > li > a.active {
-    color: black;
-    font-weight: bold;
-  }
-  
-  ul > li > a {
-    color: black;
-  }
-  
-  ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  button {
-    color: rgb(221, 221, 221);
-    background-color: rgb(1, 17, 66);
-    text-align: center;
-    font-family: Arial, "Helvetica Neue", sans-serif;
-    font-size: 20px;
-  }
-  
-  .cabecalho {
-    padding: 0 4px 0 4px;
-    height: 6vh;
-  }
-  
-  .cabecalho .navbar {
-    display: flex;
-    justify-content: space-between;
-  }
-  
+}
